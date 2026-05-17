@@ -15,7 +15,7 @@ export const fronteiras = {
       Espanha: ["Alemanha","Inglaterra", "Polonia", "Marrocos", "Egito"],
       "Estados Unidos": ["Canada", "Mexico"],
       Groelandia: ["Islandia", "Canada"],
-      India: ["China", "Oriente Médio", "Russia Oriental", "Viatna"],
+      India: ["China", "Oriente Médio", "Russia Oriental", "Viatna", "Malasia"],
       Inglaterra: ["Islandia", "Espanha", "Alemanha", "Irlanda", "Polonia"],
       Irlanda: ["Inglaterra"],
       Islandia: ["Suecia", "Inglaterra", "Groelandia"],
@@ -31,6 +31,12 @@ export const fronteiras = {
       "Russia Oriental": ["Mongolia","Canada","China", "Russia Ocidental", "India", "Japao", "Oriente Médio"],
       Sudao: ["Congo", "Africa do Sul", "Nigeria", "Egito"],
       Suecia: ["Islandia", "Russia Ocidental"],
-      Viatna: ["India", "China", "Nova Zelandia"],
+      Viatna: ["India", "China", "Nova Zelandia", "Indonesia"],
+      Indonesia: ["Australia", "Papua Nova-Guine"],
+      Malasia: ["Singapura", "India"],
+      "Papua Nova-Guine": ["Ilhas Salomao", "Indonesia"],
+      Australia: ["Indonesia", "Ilhas Salomao", "Singapura"],
+      Singapura: ["Malasia", "Australia"],
+      "Ilhas Salomao": ["Australia", "Papua Nova-Guine"]
 
     };

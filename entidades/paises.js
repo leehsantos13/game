@@ -29,5 +29,9 @@ export const listaPaises = [
   "Polonia",
   "Suecia",
   "Viatna",
+  "Indonesia",
+  "Papua Nova-Guine",
+  "Ilhas Salomao",
+  "Singapura"
 
 ];
