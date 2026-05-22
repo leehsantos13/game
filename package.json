@@ -4,7 +4,8 @@
   "description": "Jogo web inspirado no War",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Sem testes configurados ainda\" && exit 0"
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
   },
   "repository": {
     "type": "git",
@@ -13,5 +14,15 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
