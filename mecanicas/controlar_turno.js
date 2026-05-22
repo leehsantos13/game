@@ -154,6 +154,8 @@ console.log(perguntaAleatoria);
       estado
     );
 
+    
+
   } else {
 
    const aviso = document.getElementById("aviso");
@@ -183,7 +185,6 @@ console.log(perguntaAleatoria);
 
 
   limparVizinhosMarcados(estado);
-
   trocarJogador(estado);
 
 }
