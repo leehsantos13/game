@@ -149,12 +149,32 @@ console.log(perguntaAleatoria);
 
   if (acertou) {
 
+     const aviso = document.getElementById("aviso");
+
+  aviso.innerText = `✅ ${jogadorAtual.nome} acertou a pergunta!`;
+
+  // REMOVE cores antigas
+  aviso.classList.remove("aviso-vermelho");
+  aviso.classList.remove("aviso-azul");
+
+  // ADICIONA nova cor
+  if (jogadorAtual.nome === "Jogador 1") {
+    aviso.classList.add("aviso-vermelho");
+  } else {
+    aviso.classList.add("aviso-azul");
+  }
+
+  aviso.style.display = "block";
+
+  setTimeout(() => {
+    aviso.style.display = "none";
+  }, 3000);
+
     conquistarTerritorio(
       territorio,
       estado
     );
 
-    
 
   } else {
 
