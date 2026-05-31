@@ -1,11 +1,11 @@
 {
   "name": "@leehsantos13/game",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Jogo web inspirado no War",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "nodemon server/server.js"
+    "start": "node server/script.js",
+    "dev": "nodemon server/script.js"
   },
   "repository": {
     "type": "git",

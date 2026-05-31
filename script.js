@@ -28,7 +28,8 @@ const estadoJogo = {
   territorioSelecionado: null,
   vizinhosValidos: [],
   statusJogo,
-  reiniciarTimer: null
+  reiniciarTimer: null,
+  limitePaisesParaVencer: 4
 };
 zerarTimer(display);
 

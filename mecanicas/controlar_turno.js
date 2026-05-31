@@ -1,5 +1,5 @@
 import { perguntas } from "../entidades/perguntas.js";
-
+import { verificarFimDeJogo } from "./finalizar_jogo.js";
 import { mostrarVizinhos } from "./mostrar_vizinhos.js";
 import { limparVizinhosMarcados } from "./controlar_turno_mecanicas/limpar_vizinhos_marcados.js";
 import { atualizarJogadorAtivo } from "./controlar_turno_mecanicas/atualizar_jogador_ativos.js";
@@ -30,6 +30,9 @@ function conquistarTerritorio(territorio, estado) {
   if (estado.statusJogo) {
     estado.statusJogo.textContent =
       `${jogadorAtual.nome} conquistou ${nomeTerritorio}`;
+  }
+  if (verificarFimDeJogo(estado, jogadorAtual)) {
+  return;
   }
 
   trocarJogador(estado);

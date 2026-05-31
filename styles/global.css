@@ -58,3 +58,122 @@ html, body {
 .aviso-azul {
   background: blue;
 }
+
+#telaVencedor {
+  position: fixed !important;
+  inset: 0 !important;
+
+  width: 100vw !important;
+  height: 100vh !important;
+
+  display: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+
+  z-index: 999999 !important;
+  cursor: pointer !important;
+
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Não use .ativo aqui, porque .ativo já existe no HUD */
+#telaVencedor.mostrar-vitoria {
+  display: block !important;
+}
+
+/* Card exatamente no centro da tela */
+#telaVencedor .card-vencedor {
+  position: fixed !important;
+
+  top: 50% !important;
+  left: 50% !important;
+
+  transform: translate(-50%, -50%) !important;
+
+  width: 650px !important;
+  max-width: 88vw !important;
+  min-height: 280px !important;
+
+  margin: 0 !important;
+  padding: 45px 40px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  background: rgba(0, 0, 0, 0.88) !important;
+  color: white !important;
+
+  border: none !important;
+  outline: none !important;
+  border-radius: 22px !important;
+
+  text-align: center !important;
+
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.65) !important;
+  backdrop-filter: blur(8px);
+}
+
+#telaVencedor .card-vencedor h2 {
+  margin: 0 0 25px 0 !important;
+  padding: 0 !important;
+
+  font-size: 46px !important;
+  line-height: 1.15 !important;
+
+  color: white !important;
+  text-transform: uppercase !important;
+  letter-spacing: 4px !important;
+
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.7) !important;
+}
+
+#telaVencedor .card-vencedor p {
+  margin: 0 0 28px 0 !important;
+  padding: 0 !important;
+
+  font-size: 21px !important;
+  color: white !important;
+}
+
+#telaVencedor .card-vencedor span {
+  display: inline-block !important;
+
+  margin: 0 !important;
+  padding: 12px 30px !important;
+
+  border: none !important;
+  border-radius: 40px !important;
+
+  background: red !important;
+  color: white !important;
+
+  font-size: 14px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+}
+
+/* Vencedor vermelho */
+#telaVencedor.vencedor-vermelho .card-vencedor {
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.75) !important;
+}
+
+#telaVencedor.vencedor-vermelho .card-vencedor span {
+  background: red !important;
+}
+
+/* Vencedor azul */
+#telaVencedor.vencedor-azul .card-vencedor {
+  box-shadow: 0 0 35px rgba(0, 80, 255, 0.75) !important;
+}
+
+#telaVencedor.vencedor-azul .card-vencedor span {
+  background: blue !important;
+}
