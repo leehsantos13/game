@@ -81,6 +81,13 @@ E, também, a pasta styles que guarda separadamente os arquivos css de cada part
 ```bash
 # Clone o repositório
 git clone https://github.com/SimonS2003/game.git
+
+#Depois acesse
+cd game
+
+# Depois rode
+npm install
+npm start
 # Acesse: http://localhost:3000
 ```
 
